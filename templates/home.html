@@ -5,6 +5,10 @@
 <div class="post-entry">
     <h2><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></h2>
     <p>{{ post.body }}</p>
+
+    <p>Author: {{ post.author }}</p>
+
+    <div class="date">Created: {{ post.created_at }}</div>
 </div>
 {% endfor %}
 {% endblock content %}

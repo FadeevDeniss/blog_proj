@@ -1,3 +1,4 @@
+<!Doctype html>
 {% load static %}
 <html lang="en">
 <head>
@@ -7,14 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
+
 </head>
 <body>
-<header>
-    <h1><a href="{% url 'home' %}">Demo Blog</a></h1>
-</header>
 <div>
+<header>
+
+    <div class="nav-left">
+    <h1>
+        <a href="{% url 'home' %}">Demo Blog</a>
+    </h1>
+        </div>
+
+    <div class="nav-right">
+        <a href="{% url 'post_new' %}">Add Post</a>
+    </div>
+
+</header>
+
     {% block content %}
-    {% endblock content%}
+
+        {% endblock content%}
 </div>
 </body>
 </html>
