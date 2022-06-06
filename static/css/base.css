@@ -15,9 +15,28 @@ header h1 a {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: floralwhite;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #C41812;}
+.button2 {background-color: #27BF0F;}
+
+.date {
+    order: -1;
+    text-align: left;
+}
+
 .nav-left {
-    display: flex;
-    padding-top: 2rem;
+    margin-right: auto;
 }
 
 .nav-right {
@@ -44,5 +63,5 @@ margin: 0;
 font-weight: 400;
 }
 .post-entry h2 a:hover {
-color: red;
+    color: red;
 }
